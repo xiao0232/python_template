@@ -1,12 +1,21 @@
-# searchEngine
+# python_template
 
-検索エンジンの実装用リポジトリです。研究の一環として。
+個人用pythonテンプレートリポジトリです。
 
-## 構成
+## 動作環境
 
-- Analyzer
-  - Char Filter
-  - Tokenizer
-  - Token Filter
-- Indexer
-- Searcher
+```
+python >= 3.7
+poetry >= 1.1.10
+```
+
+## 使用方法
+
+```shell
+git clone https://github.com/xiao0232/python_template.git
+cd python_template
+poetry install --no-root
+# あとはよしなに
+```
+
+※ pyproject.toml内の`[tool.poetry]`は各自埋めること。
