@@ -2,18 +2,17 @@
 name = ""
 version = "0.1.0"
 description = ""
-authors = ["xiao0232 <t409828543087@gmail.com>"]
+authors = []
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-nltk = "^3.6.3"
+python = ">=3.7"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.9.2"
-pytest = "^6.2.5"
-black = "^21.9b0"
-isort = "^5.9.3"
+flake8 = "*"
+pytest = "*"
+black = "*"
+isort = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
