@@ -1,0 +1,38 @@
+[tool.poetry]
+name = ""
+version = "0.1.0"
+description = ""
+authors = ["xiao0232 <t409828543087@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nltk = "^3.6.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+pytest = "^6.2.5"
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+max-line-length = 88
+exclude = '''
+(
+    migrations
+    | .git
+    | .pytest_cache
+    | .venv
+)
+'''
+
+[tool.flake8]
+max-line-length = 88
+ignore = ["E203","W503","W504"]
+
+[tool.isort]
+profile = "black"
